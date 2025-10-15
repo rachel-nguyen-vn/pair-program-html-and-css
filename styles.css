@@ -1,0 +1,31 @@
+.brown-text h3 {
+    color: brown;
+}
+
+.green-text h3 {
+    color: green;
+}
+h2{color:black;}
+
+.yellow h3 {color:blue;}
+ 
+.purple li{
+    color: purple;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.brown-text{
+    background-color: green;
+}
+
+.green-text{
+    background-color: pink;
+}
+.purple{background-color: blue;}
+footer{
+    background-color: grey;
+}
+html{background-color:  #ADD8E6;}
