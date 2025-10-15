@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Hub - Courses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Courses</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Web Development Basics</h2>
+      <img src="images/web-development.jpg" alt="Web Development Course" style="width: 100%; max-width: 400px;" />
+      <p>Learn HTML, CSS, and JavaScript to build your first website.</p>
+      <a href="register.html?course=Web%20Development%20Basics" class="enroll-link" style="display:inline-block; background:#004aad; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none;">Enroll Now</a>
+    </article>
+
+    <article>
+      <h2>Data Science for Beginners</h2>
+      <img src="images/data-science.jpg" alt="Data Science Course" style="width: 100%; max-width: 400px;" />
+      <p>Get started with data analysis, visualization, and machine learning.</p>
+      <a href="register.html?course=Web%20Development%20Basics" class="enroll-link" style="display:inline-block; background:#004aad; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none;">Enroll Now</a>
+    </article>
+
+    <article>
+      <h2>Digital Marketing 101</h2>
+      <img src="images/digital-marketing.jpg" alt="Digital Marketing Course" style="width: 100%; max-width: 400px;" />
+      <p>Master social media marketing, SEO, and email campaigns.</p>
+      <a href="register.html?course=Web%20Development%20Basics" class="enroll-link" style="display:inline-block; background:#004aad; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none;">Enroll Now</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Course Hub</p>
+  </footer>
+
+  <script>
+    // Add event listeners to all enroll buttons
+    document.querySelectorAll('.enroll-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const courseName = button.getAttribute('data-course');
+        alert(`Thanks for your interest in enrolling for "${courseName}"! We will contact you soon.`);
+      });
+    });
+  </script>
+</body>
+</html>
